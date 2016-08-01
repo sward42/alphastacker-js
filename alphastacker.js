@@ -23,6 +23,16 @@ var alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q"
 var alphaAdd = "";
 var stacker = "";
 
+//console.log(alpha.splice(5, 0, " "));
+
+
+for (var i = 0; i < alpha.length; i++) {
+	if((i+1) % 6 === 0) {
+		alpha.splice(i,0," ");
+	}
+}
+
+//console.log(alpha);
 
 for (var i = 0; i < alpha.length; i++) {
 	alphaAdd = alpha.slice(0, i);
@@ -30,7 +40,7 @@ for (var i = 0; i < alpha.length; i++) {
 	console.log(stacker);
 }
 
-console.log(alpha.splice(4, 0, ""));
+
 
 
 	
